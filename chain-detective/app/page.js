@@ -296,7 +296,7 @@ function GameContent() {
           </p>
           
           <div className="bg-cyan-500/20 border border-cyan-400/50 rounded-xl p-6 mb-6">
-            <h3 className="text-xl font-semibold text-cyan-300 mb-3">🚀 How Brevis Works (Real World)</h3>
+            <h3 className="text-xl font-semibold text-cyan-300 mb-3">🚀 How Brevis Works</h3>
             <ol className="space-y-2 text-purple-100">
               <li><span className="text-cyan-400 font-semibold">1. Query Submission:</span> You submit a cross-chain data query</li>
               <li><span className="text-cyan-400 font-semibold">2. Data Collection:</span> Brevis collects historical data from multiple blockchains</li>
@@ -304,16 +304,6 @@ function GameContent() {
               <li><span className="text-cyan-400 font-semibold">4. Verification:</span> The proof is verified on-chain (trustless!)</li>
               <li><span className="text-cyan-400 font-semibold">5. Results Delivery:</span> Verified data is delivered to your smart contract or dApp</li>
             </ol>
-          </div>
-
-          <div className="bg-purple-500/20 border border-purple-400/50 rounded-xl p-6 mb-6">
-            <h3 className="text-xl font-semibold text-purple-300 mb-3">💡 Why This Matters</h3>
-            <ul className="space-y-2 text-purple-100">
-              <li>✅ <span className="font-semibold">No Archive Nodes:</span> Access any historical data without running expensive infrastructure</li>
-              <li>✅ <span className="font-semibold">Cross-Chain:</span> Query Ethereum, Arbitrum, Base, Optimism, Polygon simultaneously</li>
-              <li>✅ <span className="font-semibold">Trustless:</span> ZK proofs ensure data integrity without trusting oracles</li>
-              <li>✅ <span className="font-semibold">Fast:</span> What takes hours manually takes seconds with Brevis</li>
-            </ul>
           </div>
         </div>
 
