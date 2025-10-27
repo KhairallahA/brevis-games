@@ -87,7 +87,6 @@ function GameContent() {
     { id: 'arbitrum', name: 'Arbitrum', color: 'bg-cyan-500', icon: '◆', launched: '2021-08-31' },
     { id: 'base', name: 'Base', color: 'bg-indigo-500', icon: '⬡', launched: '2023-08-09' },
     { id: 'optimism', name: 'Optimism', color: 'bg-red-500', icon: '◉', launched: '2021-12-16' },
-    { id: 'polygon', name: 'Polygon', color: 'bg-purple-500', icon: '⬢', launched: '2020-05-30' }
   ];
 
   const startMission = (mission) => {

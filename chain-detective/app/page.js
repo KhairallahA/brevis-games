@@ -63,12 +63,11 @@ function GameContent() {
     { id: 'arbitrum', name: 'Arbitrum', color: 'bg-cyan-500', icon: '◆' },
     { id: 'base', name: 'Base', color: 'bg-indigo-500', icon: '⬡' },
     { id: 'optimism', name: 'Optimism', color: 'bg-red-500', icon: '◉' },
-    { id: 'polygon', name: 'Polygon', color: 'bg-purple-500', icon: '⬢' }
   ];
 
   const startMystery = (mysteryToStart) => {
     if (mysteryToStart.id === 2) {
-      const allChains = ['Ethereum', 'Arbitrum', 'Base', 'Optimism', 'Polygon'];
+      const allChains = ['Ethereum', 'Arbitrum', 'Base', 'Optimism'];
       const shuffled = [...allChains].sort(() => Math.random() - 0.5);
       const selectedChainNames = shuffled.slice(0, 4); // Take first 4
       
@@ -77,7 +76,6 @@ function GameContent() {
         arbitrum: (Math.floor(Math.random() * 6) + 6) * 1000000,  // 6M-11M
         base: (Math.floor(Math.random() * 10) + 12) * 1000000,    // 12M-21M
         optimism: (Math.floor(Math.random() * 5) + 4) * 1000000,  // 4M-8M
-        polygon: (Math.floor(Math.random() * 5) + 3) * 1000000    // 3M-7M
       };
       
       const total = selectedChainNames.reduce((sum, chain) => {
@@ -226,13 +224,6 @@ function GameContent() {
           amount: '73 suspicious trades',
           txHash: '0xopt...004',
           description: 'Wallet D ↔ Wallet A loop closure'
-        },
-        'Polygon': {
-          volume: volumes.polygon,
-          type: 'Wash Trade',
-          amount: '64 suspicious trades',
-          txHash: '0xpoly...005',
-          description: 'Wallet A ↔ Wallet C cross-ring activity'
         }
       };
       
@@ -274,7 +265,7 @@ function GameContent() {
       setGameState('solved');
     } else {
       if (selectedMystery.type === 'calculation') {
-        alert('❌ Incorrect amount. Remember to ADD UP all suspicious volume from ALL 5 chains: Ethereum + Arbitrum + Base + Optimism + Polygon. Try again or click "Reveal Answer" for help.');
+        alert('❌ Incorrect amount. Remember to ADD UP all suspicious volume from ALL 5 chains: Ethereum + Arbitrum + Base + Optimism. Try again or click "Reveal Answer" for help.');
       } else {
         alert('❌ Incorrect wallet address. Try again or click "Reveal Answer" for help.');
       }
